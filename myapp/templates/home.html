@@ -1,0 +1,248 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Deals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .tag {
+      background-color: #a4001e;
+      color: white;
+      font-size: 0.8rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 28px;
+}
+
+.brand-text {
+  color: #666;
+  font-size: 14px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  padding: 6px 14px;
+  border: 1px solid #222;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition:0.2s;
+}
+
+.login-btn:hover {
+  background: #f2f2f2;
+}
+.feature-card {
+            text-align: center;
+            padding: 20px;
+        }
+        .feature-card img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .feature-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        .feature-text {
+            color: #555;
+        }
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+  <div class="nav-left">
+   <p style="color: rgb(225, 11, 46); font-size:x-large;font-family: Forte;">RIVER</p>
+   
+
+  </div>
+
+  <div class="nav-right">
+    <a href="#">Home</a>
+    <div class="dropdown">
+      <a href="#">Hotels ▾</a>
+    </div>
+</nav>
+<div class="container mt-5">
+  <h2 class="mb-4">5-Star Hotels in Chennai</h2>
+  <div class="row g-4">
+    
+    <!-- Hotel 1 -->
+    <div class="col-md-4">
+  <div class="card">
+    <img src="{% static 'images/gallery_2.jpg' %}" class="card-img-top" alt="Anna Salai">
+    <div class="card-body">
+      <h5 class="card-title">Anna Salai</h5>
+      <p><span class="badge bg-success">9.1</span> Excellent (21,045) ·Anna Salai</p>
+      <p class="tag">30% lower than other sites</p>
+      <p class="mb-1"><strong>Booking.com</strong> · Free breakfast included</p>
+      <p class="price">₹7,250 <span class="text-muted fs-6">per night</span></p>
+      <p>12 Sept - 13 Sept</p>
+      <a href="{% url 'booking' %}" class="btn btn-primary w-100">Check deal</a>
+    </div>
+  </div>
+</div>
+    <!-- Hotel 2 -->
+    <div class="col-md-4">
+  <div class="card">
+    <img src="{% static 'images/gallery_3.jpg' %}" class="card-img-top" alt="Sir Thyagaraya">
+    <div class="card-body">
+      <h5 class="card-title">Sir Thyagaraya</h5>
+      <p><span class="badge bg-success">8.9</span> Fabulous (12,145) ·Sir Thyagarayai</p>
+      <p class="tag">20% lower than other sites</p>
+      <p class="mb-1"><strong>Agoda</strong> · Free cancellation</p>
+      <p class="price">₹6,790 <span class="text-muted fs-6">per night</span></p>
+      <p>15 Aug - 17 Aug</p>
+      <a href="{% url 'booking' %}" class="btn btn-primary w-100">Check deal</a>
+    </div>
+  </div>
+</div>
+      
+
+    <!-- Hotel 3 -->
+  <div class="col-md-4">
+  <div class="card">
+    <img src="{% static 'images/gallery_4.jpg' %}" class="card-img-top" alt=" Mahabalipuram">
+    <div class="card-body">
+      <h5 class="card-title"> Mahabalipuram</h5>
+      <p><span class="badge bg-success">8.4</span> Very good (4,312) · Mahabalipuram</p>
+      <p class="tag">18% lower than other sites</p>
+      <p class="mb-1"><strong>MakeMyTrip</strong> · Breakfast included</p>
+      <p class="price">₹4,250 <span class="text-muted fs-6">per night</span></p>
+      <p>22 Aug - 24 Aug</p>
+      <a href="{% url 'booking' %}" class="btn btn-primary w-100">Check deal</a>
+    </div>
+  </div>
+</div>
+
+  <section>
+    <div class="container my-5">
+  <h3 class="mb-3">Popular searches</h3>
+  <ul class="nav nav-tabs tabs mb-4">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Cities</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Destinations</a>
+    </li>
+  </ul>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <!-- Jaipur -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/gallery_3.jpg' %}" class="card-img-top" alt="Meenambakkam">
+        <div class="card-body">
+          <h5 class="card-title">Meenambakkam</h5>
+          <p class="card-text"><strong>4,872</strong> Hotels<br><strong>₹4,732</strong> Avg.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mumbai -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/gallery_1.jpg' %}" class="card-img-top" alt="T. Nagar">
+        <div class="card-body">
+          <h5 class="card-title">T. Nagar</h5>
+          <p class="card-text"><strong>5,214</strong> Hotels<br><strong>₹7,205</strong> Avg.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Udaipur -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/gallery_4.jpg' %}" class="card-img-top" alt=" Semmencherry">
+        <div class="card-body">
+          <h5 class="card-title"> Semmencherry</h5>
+          <p class="card-text"><strong>2,570</strong> Hotels<br><strong>₹5,484</strong> Avg.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delhi -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/pexels2.jpeg' %}" class="card-img-top" alt="Mahabalipuram">
+        <div class="card-body">
+          <h5 class="card-title">Mahabalipuram</h5>
+          <p class="card-text"><strong>12,434</strong> Hotels<br><strong>₹5,716</strong> Avg.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ </section>
+  <section>
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4 feature-card">
+                <img src="{% static 'images/image1.jpg' %}" alt="Search Icon">
+                <div class="feature-title">Search simply</div>
+                <p class="feature-text">Easily search through millions of hotels in seconds.</p>
+            </div>
+            <div class="col-md-4 feature-card">
+                <img src="{% static 'images/image2.png' %}" alt="Compare Icon">
+                <div class="feature-title">Compare confidently</div>
+                <p class="feature-text">Compare hotel prices from over 100 sites at once.</p>
+            </div>
+            <div class="col-md-4 feature-card">
+                <img src="{% static 'images/image4.png' %}" alt="Save Icon">
+                <div class="feature-title">Save big</div>
+                <p class="feature-text">Discover a great deal to book on our partner sites.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,539 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=""></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <title>Document</title>
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</head><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+<style>
+  #nav2{
+    color: green;
+}
+.button{
+    background-color: rgb(169, 34, 129);
+}
+#bt1{
+    background-color:orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#bt1:hover{
+    background-color: whitesmoke;
+    color: orange;
+}
+#nav1:hover{
+    color: rgb(10, 153, 48);
+}
+#btn2{
+    background-color: orange;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#element{
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#element:hover{
+    background-color: rgba(247, 245, 241, 0.453);
+    color: white;
+}
+.font{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.font{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#ashik{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#ashik{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+   .testimonial {
+      background: #dfdbdbe8;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(192, 91, 91, 0.1);
+      text-align: center;
+      margin-top: 20px;
+      background-image:image-set(70px);
+  
+    }
+
+    .testimonial img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 30%;
+      margin-top: 60px;
+      
+    }
+    .stars {
+      color: #ffc107;
+      font-size: 1.2rem;
+    }
+    .room-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      
+    }
+    .room-image {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+    }
+    .price-badge {
+      position: absolute;
+      padding-left: 50px;
+      padding-right: 50px;
+      background: white;
+      padding: 8px 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      color: #000;
+    }
+    .room-name {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+     
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .text{
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: orange;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .text{
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: orange;
+         padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .text{
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: orange;
+         padding-bottom: 15px;
+        padding-top: 15px;
+    }
+   carousel-item {
+      padding: 2rem 0;
+    }
+
+    .testimonial-card {
+      position: relative;
+      color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+    }
+
+    .testimonial-overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .testimonial-date {
+      background: #FFA07A;
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-title {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #000;
+      border-radius: 50%;
+    }
+    .bt5{
+        padding-left: 40px;
+        padding-right: 40px;
+         padding-bottom: 10px;
+         padding-top: 10px;
+          background-color: transparent;
+          font-size: 20px;
+          border-radius: 10px;
+    }
+    .bt5:hover{
+        background-color: rgb(194, 112, 13);
+        color:black;
+       
+    }
+    
+</style>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(89, 59, 131);">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <label style="padding-left: 20px; padding-right: 20px; margin-right: 10px;font-size: 30px;border-color: white ;">RIVER</label>
+    </a>
+    <!-- Toggle button -->
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+  >
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="nav2" style="font-family: serif; font-size:30px;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" id="nav1" style="font-family: serif;font-size:30px;">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Rooms" id="nav1" style="font-family: serif;font-size:30px;">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Blog" id="nav1" style="font-family: serif;font-size:30px;">Blog</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+      <div class="d-flex align-items-center">
+      <a href="{% url 'login' %}" class="btn btn-primary" style="font-size: 20px; font-family: serif; border-radius: 10px;">
+  Login
+</a>
+
+        <a href="hotal booking.html">
+        <button btn="button" style="font-size: 20px; border: none; font-family: serif;border-radius: 10px;"id="btn2">
+          Book online
+        </button></a>
+       
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/gallery_1.jpg' %}" class="d-block w-100" alt="First slide" height="700px" width="50px">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/hotel1.jpg' %}" class="d-block w-100" alt="Second slide" height="700px" width="50px">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/OIP.jpg' %}" class="d-block w-100" alt="Third slide" height="700px" width="50px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="carousel-caption d-none d-md-block">
+      <p style="font-size: 50px;">MR ASHIK</p>
+      <button style="font-size: 20px; padding-left: 50px; padding-right: 50px; margin-right: 10px;border-color: white; background-color: rgba(255, 255, 255, 0.393); color: white;font-family: serif;border-radius: 10px;" class="font">check in</button>
+      <button style="font-size: 20px; padding-left: 50px; padding-right: 50px; margin-right: 10px;border-color: white; background-color: rgba(255, 255, 255, 0.393); color: white;font-family: serif;border-radius: 10px;"class="font" >check out</button>
+      <button style="font-size: 20px; padding-left: 30px; padding-right: 30px; margin-right: 10px;border-color: white; background-color: rgba(255, 255, 255, 0.393); color: white;font-family: serif;border-radius: 10px;" id="ashik">children</button>
+      <button style="font-size: 20px; padding-left: 30px; padding-right: 30px; margin-right: 10px;border-color: white; background-color: rgba(255, 255, 255, 0.393); color: white;font-family: serif;border-radius: 10px;" id="ashik">Room</button>
+      <button style="font-size: 20px; padding-left: 20px; padding-right: 20px; margin-right: 10px;color: white; padding-top: 10px; padding-bottom: 10px; border: none;font-family: serif;border-radius: 10px;" id="element" >Book now</a ></button>      
+    </div><br><br></a>
+    
+<section id="about">
+  
+<div class="features;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 icon_box_col">
+					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="icon_box_icon"><img src="{% static 'images/image4.png' %}" class="svg"alt="https://www.flaticon.com/authors/monkik" height="230px"></div>
+						<div class="icon_box_title"><h2>Fabulous Resort</h2></div>
+						<div class="icon_box_text">
+							<p>At Fabulous Resorts Inc., we specialize in golf resort community properties, offering an exclusive selection of homes for sale and lease in premier golf destinations.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 icon_box_col">
+					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="icon_box_icon"><img src="{% static 'images/image1.jpg' %}" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
+						<div class="icon_box_title"><h2>Infinity Pool</h2></div>
+						<div class="icon_box_text">
+							<p>At most luxury resorts, wellness is somewhere near the end of a long list of amenities, behind the signature restaurant, infinity pool, and shopping.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 icon_box_col">
+					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="icon_box_icon"><img src="{% static 'images/image2.png' %}" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
+						<div class="icon_box_title"><h2>Luxury Rooms</h2></div>
+						<div class="icon_box_text">
+							<p>The most luxurious accommodation in a hotel is often called the presidential suite or royal suite.</p>
+						</div>
+					</div>
+				</div>
+</section><br><br>
+<section id="Rooms">
+  
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="{% static 'images/gallery_1.jpg' %}" height="70%;">
+</div>
+    
+    <div class="col-sm-3" >
+      <img src="{% static 'images/gallery_2.jpg' %}" height="70%">
+</div>
+ <div class="col-sm-3" >
+      <img src="{% static 'images/gallery_3.jpg' %}" height="70%">
+</div>
+<div class="col-sm-3" >
+      <img src="{% static 'images/gallery_4.jpg' %}" height="70%">
+</div>
+</section>
+<section id="Blog" style=" margin-top: -120px;padding-bottom: 60px;" >
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-5">
+      <div class="about_title"><h2>The River / 10 years of excellence</h2></div>
+      <p style="text-align: justify;">Returned back EPC despite long travel time from Calgary. Booked master suit in the club. It was our sixth stay in Excellence resorts, with latest stay in ERC last September.</p>
+    </div>
+        <div class="col-sm-2" style="margin-left: 10px;" >
+      <img src="{% static 'images/about_1.png' %}">
+  </div>
+     <div class="col-sm-2" >
+      <img src="{% static 'images/about_2.png' %}">
+  </div>  
+     <div class="col-sm-2" >
+     <img src="{% static 'images/about_3.png' %}">
+  </div>
+</section>
+      <section style="background-image: url('{% static 'images/gallery_2.jpg' %}'); height: 500px; background-repeat: no-repeat; background-size: cover;">
+<div class="container">
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="testimonial mx-auto" style="max-width: 500px;">
+          <div class="stars mb-3">★★★★★</div>
+          <h5 class="fw-bold">We loved it</h5>
+          <p> A common expression indicating enjoyment or appreciation of something.</p>
+        <img src="{% static 'images/Chaitra.jpg' %}" alt="Luis Garcia" class="testimonial-img">
+          <p class="fw-bold mt-3 mb-0">Chaitra</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="testimonial mx-auto" style="max-width: 500px;">
+          <div class="stars mb-3">★★★★★</div>
+          <h5 class="fw-bold">Perfect Stay</h5>
+          <p>Each room includes a work desk, TV, and free WiFi, ensuring a pleasant stay.</p>
+          <img src="{% static 'images/Riifam.jpg' %}" alt="Samantha Smith">
+          <p class="fw-bold mt-3 mb-0">Riifam</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+  </section><br><br>
+ 
+  <section>
+    <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="room-card">
+        <div class="room-image" style="background-image: url('{% static 'images/gallery_1.jpg' %}');">
+          <div class="price-badge">₹120/Night</div>
+         <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+
+          <div class="room-name">
+  <a href="{% url 'login' %}" class="text btn btn-outline-primary" style="border-radius: 10px; border-color:#FFA07A;background-color: #ffc107;">Single Room</a>
+</div>
+
+  
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="room-card">
+        <div class="room-image" style="background-image: url('{% static 'images/gallery_2.jpg' %}');">
+          <div class="price-badge">₹120/Night</div>
+         <div class="room-name">
+       <a href="{% url 'login' %}" class="text btn btn-outline-primary" style="border-radius: 10px;border-color:#FFA07A; background-color: #ffc107;">Family Room</a>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="room-card">
+      <div class="room-image" style="background-image: url('{% static 'images/gallery_3.jpg' %}');">
+          <div class="price-badge">₹120/Night</div>
+          <div class="room-name">
+       <a href="{% url 'login' %}" class="text btn btn-outline-primary" style="border-radius: 10px; border-color: #FFA07A;background-color: #ffc107;">Deluxe Room</a>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section><br><br>
+  <div class="container py-5">
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+           <div class="testimonial-card" style="background-image: url('{% static 'images/home.png' %}');">
+
+              <div class="testimonial-overlay">
+                <div class="testimonial-date">Oct 20, 2018</div>
+                <div class="testimonial-title">10 restaurants in town</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card" style="background-image: url('{% static 'images/pexels1.jpeg' %}');">
+
+              <div class="testimonial-overlay">
+                <div class="testimonial-date">Oct 20, 2018</div>
+                <div class="testimonial-title">A perfect wedding</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+           <div class="testimonial-card" style="background-image: url('{% static 'images/pexels2.jpeg' %}');"></div> 
+              <div class="testimonial-overlay">
+                <div class="testimonial-date">Oct 20, 2018</div>
+                <div class="testimonial-title">How to book your stay</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more carousel-item slides here if needed -->
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+  </div>
+</div>
+</section>
+<center>
+
+ <button class="bt5">The River</button>
+  <p style="font-family: Maiandra GD;">since1945</p>
+   
+   </center>
+<section>
+ <div class="container">
+ <div class="row">
+  
+    <div class="col-sm-3">
+      <h3>Our Address</h3>
+      <p>marthandam</p>
+      <p>629804</p>
+      <p>USA</p>
+    </div>
+     <div class="col-sm-3">
+      <h3>Reservations</h3>
+      <p>tel:9600704376</p>
+      <p>fax:9800457834</p>
+      <p>ashik123@gmail.com</p>
+    </div>
+     <div class="col-sm-3">
+      <h3>Newsletter</h3>
+      <div><input type="email"  placeholder="Your email address" style="border: none;"></div>
+      <hr>
+      <button style="padding-left: 30px; padding-right: 30px; padding-bottom: 10px;margin-top: 20px; padding-top: 10px;background-color: orange; border: none;border-radius: 10px;">subscribe</button>
+    </div>
+     <div class="col-sm-3">
+      <div><img src="{% static 'images/about_1.png' %}" style="width: 100px;"><img src="{% static 'images/about_2.png' %}" style="width: 100px; margin-left: 40px;" ></div>
+    </div>
+  </div>
+ </div>
+
+</section>
+</body>
+</html>

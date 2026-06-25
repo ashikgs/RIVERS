@@ -1,0 +1,188 @@
+#nav2{
+    color: green;
+}
+.button{
+    background-color: rgb(169, 34, 129);
+}
+#bt1{
+    background-color:orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#bt1:hover{
+    background-color: whitesmoke;
+    color: orange;
+}
+#nav1:hover{
+    color: rgb(10, 153, 48);
+}
+#btn2{
+    background-color: orange;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#element{
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#element:hover{
+    background-color: rgba(247, 245, 241, 0.453);
+    color: white;
+}
+.font{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.font{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#ashik{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#ashik{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+   .testimonial {
+      background: #dfdbdbe8;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(192, 91, 91, 0.1);
+      text-align: center;
+      margin-top: 20px;
+      background-image:image-set(70px);
+  
+    }
+
+    .testimonial img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 30%;
+      margin-top: 60px;
+      
+    }
+    .stars {
+      color: #ffc107;
+      font-size: 1.2rem;
+    }
+    .room-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      
+    }
+    .room-image {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+    }
+    .price-badge {
+      position: absolute;
+      padding-left: 50px;
+      padding-right: 50px;
+      background: white;
+      padding: 8px 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      color: #000;
+    }
+    .room-name {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+     
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .text{
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: orange;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .text{
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: orange;
+         padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .text{
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: orange;
+         padding-bottom: 15px;
+        padding-top: 15px;
+    }
+   carousel-item {
+      padding: 2rem 0;
+    }
+
+    .testimonial-card {
+      position: relative;
+      color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+    }
+
+    .testimonial-overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .testimonial-date {
+      background: #FFA07A;
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-title {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #000;
+      border-radius: 50%;
+    }
+    .bt5{
+        padding-left: 40px;
+        padding-right: 40px;
+         padding-bottom: 10px;
+         padding-top: 10px;
+          background-color: transparent;
+          font-size: 20px;
+          border-radius: 10px;
+    }
+    .bt5:hover{
+        background-color: rgb(194, 112, 13);
+        color:black;
+       
+    }
+    
